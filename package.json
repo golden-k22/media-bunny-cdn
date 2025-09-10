@@ -1,0 +1,14 @@
+{
+  "name": "bunny-app",
+  "version": "1.0.0",
+  "description": "Media upload app with AdonisJS API and Next.js frontend",
+  "scripts": {
+    "install": "cd api && npm install && cd ../frontend && npm install",
+    "start": "concurrently \"cd api && npm run dev\" \"cd frontend && npm run dev\"",
+    "api": "cd api && npm run dev",
+    "frontend": "cd frontend && npm run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
